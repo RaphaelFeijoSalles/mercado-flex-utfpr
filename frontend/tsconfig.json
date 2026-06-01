@@ -1,0 +1,7 @@
+{
+  "files": ["CheckoutView.tsx", "CheckoutView.module.css"],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
