@@ -1,4 +1,3 @@
-// src/features/checkout/hooks/useCheckout.ts
 import { useState, useCallback } from 'react';
 import { finalizarCompra } from '../services/checkoutApi.ts';
 import type { CheckoutResponseDTO } from '../types/checkout.types.ts';

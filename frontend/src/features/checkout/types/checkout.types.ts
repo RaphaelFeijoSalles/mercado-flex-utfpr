@@ -1,5 +1,3 @@
-// src/features/checkout/types/checkout.types.ts
-
 export interface CheckoutRequestDTO {
     clienteId: number;
     // O carrinho será resolvido no backend, mas o ID do cliente é necessário

@@ -1,4 +1,3 @@
-// src/features/checkout/services/checkoutApi.ts
 import type { CheckoutResponseDTO, CheckoutError } from '../types/checkout.types.ts';
 
 export const finalizarCompra = async (clienteId: number): Promise<CheckoutResponseDTO> => {
