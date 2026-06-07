@@ -80,7 +80,7 @@ export const CartView: React.FC<{ onProceedToCheckout: (total: number, endereco:
                 <h1 className={styles.title}>Selecione o Endereço</h1>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                     {enderecosFixos.map(endereco => (
-                        <div key={endereco.id} style={{ border: `2px solid ${selectedEndereco.id === endereco.id ? '#00c853' : '#e0e0e0'}`, padding: '16px', borderRadius: '8px', cursor: 'pointer', backgroundColor: selectedEndereco.id === endereco.id ? '#f0fdf4' : 'white' }} onClick={() => { setSelectedEndereco(endereco); setIsChangingEndereco(false); }}>
+                        <div key={endereco.id} style={{ border: `2px solid ${selectedEndereco.id === endereco.id ? '#70CAFF' : '#e0e0e0'}`, padding: '16px', borderRadius: '8px', cursor: 'pointer', backgroundColor: selectedEndereco.id === endereco.id ? '#f0fdf4' : 'white' }} onClick={() => { setSelectedEndereco(endereco); setIsChangingEndereco(false); }}>
                             <p style={{ margin: '0 0 8px 0' }}><strong>{endereco.rua}</strong></p>
                             <p style={{ margin: 0, color: '#666' }}>{endereco.cidade} - {endereco.estado}, CEP: {endereco.cep}</p>
                         </div>
@@ -112,9 +112,9 @@ export const CartView: React.FC<{ onProceedToCheckout: (total: number, endereco:
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                             <div style={{ display: 'flex', alignItems: 'center', border: '1px solid #ddd', borderRadius: '4px' }}>
-                                <button style={{padding: '8px 12px', border: 'none', background: '#00c853', cursor: 'pointer', fontSize: '16px' }} onClick={() => updateQuantity(item.id, -1)}>-</button>
+                                <button style={{padding: '8px 12px', border: 'none', background: '#70CAFF', cursor: 'pointer', fontSize: '16px' }} onClick={() => updateQuantity(item.id, -1)}>-</button>
                                 <span style={{ padding: '0 8px', fontWeight: 'bold' }}>{item.quantidade}</span>
-                                <button style={{ padding: '8px 12px', border: 'none', background: '#00c853', cursor: 'pointer', fontSize: '16px' }} onClick={() => updateQuantity(item.id, 1)}>+</button>
+                                <button style={{ padding: '8px 12px', border: 'none', background: '#70CAFF', cursor: 'pointer', fontSize: '16px' }} onClick={() => updateQuantity(item.id, 1)}>+</button>
                             </div>
                             <button style={{ padding: '8px 12px', background: '#ffebee', color: '#c62828', border: 'none', borderRadius: '4px', cursor: 'pointer' }} onClick={() => removeItem(item.id)}>
                                 🗑️
@@ -127,7 +127,7 @@ export const CartView: React.FC<{ onProceedToCheckout: (total: number, endereco:
             <div style={{ backgroundColor: '#f9f9f9', padding: '16px', borderRadius: '8px', marginBottom: '24px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                     <p style={{ margin: 0 }}><strong>Endereço de Entrega:</strong></p>
-                    <button style={{ background: 'none', border: 'none', color: '#00c853', cursor: 'pointer', textDecoration: 'underline', fontWeight: 'bold' }} onClick={() => setIsChangingEndereco(true)}>
+                    <button style={{ background: 'none', border: 'none', color: '#70CAFF', cursor: 'pointer', textDecoration: 'underline', fontWeight: 'bold' }} onClick={() => setIsChangingEndereco(true)}>
                         Mudar
                     </button>
                 </div>
@@ -145,7 +145,7 @@ export const CartView: React.FC<{ onProceedToCheckout: (total: number, endereco:
                     <span>Frete:</span>
                     <span>R$ {frete.toFixed(2)}</span>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold', fontSize: '20px', color: '#00c853' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold', fontSize: '20px', color: '#00A1FF' }}>
                     <span>Total:</span>
                     <span>R$ {total.toFixed(2)}</span>
                 </div>

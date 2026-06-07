@@ -73,7 +73,7 @@ export const InfinitePayView: React.FC<InfinitePayViewProps> = ({ total, enderec
                                 const isSelected = selectedMethod === method;
                                 return (
                                     <div key={method} style={{ 
-                                        border: `2px solid ${isSelected ? '#00c853' : '#e0e0e0'}`,
+                                        border: `2px solid ${isSelected ? '#70CAFF' : '#e0e0e0'}`,
                                         borderRadius: '8px',
                                         backgroundColor: isSelected ? '#f0fdf4' : 'white',
                                         overflow: 'hidden'
@@ -152,7 +152,7 @@ export const InfinitePayView: React.FC<InfinitePayViewProps> = ({ total, enderec
                         className={styles.button} 
                         onClick={handlePayment} 
                         disabled={!selectedMethod || isProcessing}
-                        style={{ backgroundColor: selectedMethod ? '#00c853' : '#e0e0e0', color: selectedMethod ? 'white' : '#9e9e9e' }}
+                        style={{ backgroundColor: selectedMethod ? '#70CAFF' : '#e0e0e0', color: selectedMethod ? 'white' : '#9e9e9e' }}
                     >
                         {isProcessing 
                             ? 'Processando transação...' 
@@ -275,11 +275,11 @@ export const InfinitePayView: React.FC<InfinitePayViewProps> = ({ total, enderec
                             alignItems: 'center', 
                             justifyContent: 'center', 
                             gap: '8px',
-                            color: '#00c853',
+                            color: '#70CAFF',
                             fontWeight: '500'
                         }}>
                             <div className={styles.spinner} style={{
-                                width: '16px', height: '16px', border: '2px solid #00c853',
+                                width: '16px', height: '16px', border: '2px solid #70CAFF',
                                 borderTopColor: 'transparent', borderRadius: '50%',
                                 animation: 'spin 1s linear infinite'
                             }} />

@@ -20,7 +20,7 @@
 .button {
     width: 100%;
     padding: 16px;
-    background-color: #00c853; /* Verde conversão */
+    background-color: #70CAFF;
     color: white;
     border: none;
     border-radius: 8px;
@@ -31,7 +31,7 @@
 }
 
 .button:hover:not(:disabled) {
-    background-color: #00e676;
+    background-color: #00A1FF;
 }
 
 .button:disabled {
